@@ -2323,7 +2323,7 @@ aside .news-letter hr {
 
 .about-upper-section .who-we-are p {
 	/*font-size: 1.6rem;*/
-	/*color: #59616d;*/
+	color: white;
 	margin-bottom: 1.875em;
 	line-height: 1.8;
 }
@@ -3542,4 +3542,16 @@ RESPONSIVE STYLESHEET
 .what-other-say .owl-carousel .owl-nav button.owl-prev:hover,
 .what-other-say .owl-nav button.owl-next:hover {
 	background: #12a84e;
+}
+
+
+@media screen and (Max-width:450px) and (min-width:300px){
+	.top-header{
+		display:none;
+	}
+
+	.what-other-say .container .customer-item .border{
+		padding: 33px 14px 45px 14px;
+	}
+	
 }
