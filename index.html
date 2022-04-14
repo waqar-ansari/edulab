@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>education</title>
 	<meta name="viewport" content="width=device-width">
@@ -10,13 +11,64 @@
 	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> -->
 	<!-- <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+	<style>
+		blockquote {
+			font-family: Georgia, serif;
+			position: relative;
+			margin: 0.5em;
+			padding: 0.5em 2em 0.5em 3em;
+		}
+
+		/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+		blockquote:before {
+			font-family: Georgia, serif;
+			position: absolute;
+			font-size: 6em;
+			line-height: 1;
+			top: 0;
+			left: 0;
+			content: "\201C";
+		}
+
+		blockquote:after {
+			font-family: Georgia, serif;
+			position: absolute;
+			/* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+			float: right;
+			font-size: 6em;
+			line-height: 1;
+			right: 0;
+			bottom: -0.5em;
+			content: "\201D";
+		}
+
+		blockquote footer {
+			padding: 0 2em 0 0;
+			text-align: right;
+		}
+
+		blockquote cite:before {
+			content: "\2013";
+		}
+	</style>
+
+
+
+
+
 </head>
+
 <body>
 	<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
 		<header class="site-header">
@@ -24,10 +76,12 @@
 				<div class="container">
 					<div class="top-header-left">
 						<div class="top-header-block">
-							<a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i> info@educationpro.com</a>
+							<a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i>
+								info@educationpro.com</a>
 						</div>
 						<div class="top-header-block">
-							<a href="tel:+9779813639131" itemprop="telephone"><i class="fas fa-phone"></i> +977 9813639131</a>
+							<a href="tel:+9779813639131" itemprop="telephone"><i class="fas fa-phone"></i> +977
+								9813639131</a>
 						</div>
 					</div>
 					<div class="top-header-right">
@@ -48,11 +102,17 @@
 					</div>
 				</div>
 			</div>
+			<marquee behavior="alternate" direction="" scrollamount="10"> <img src="images/newtag.jpg" width="50px"
+					height="50px" alt=""> <span class="fs-3 fw-bold"><span class="text-danger"> ADMISSIONS </span>ARE
+					NOW <span class="text-danger"> OPEN </span>FOR <span class="text-danger">SESSION 2022-23</span>.
+					PLEASE CALL ON <span style="color:green"> +919407819540 </span>FOR FURTHER DETAILS</span></marquee>
+
 			<!-- Top header Close -->
 			<div class="main-header">
 				<div class="container">
 					<div class="logo-wrap" itemprop="logo">
 						<img src="images/site-logo.jpg" alt="Logo Image">
+
 						<!-- <h1>Education</h1> -->
 					</div>
 					<div class="nav-wrap">
@@ -61,20 +121,20 @@
 								<li><a href="#">Home</a></li>
 								<li class="menu-parent">Courses
 									<ul class="sub-menu">
-										<li><a href="#">Child</a></li>
-										<li><a href="#">Child</a></li>
+										<li><a href="course-listing.html">Child</a></li>
+										<li><a href="course-single.html">Child</a></li>
 										<li class="menu-parent">Child
 											<ul class="sub-menu">
-												<li><a href="">Grand-child</a></li>
-												<li><a href="">Grand-child</a></li>
+												<li><a href="#">Grand-child</a></li>
+												<li><a href="#">Grand-child</a></li>
 											</ul>
 										</li>
 									</ul>
 								</li>
 								<li class="menu-parent">News
 									<ul class="sub-menu">
-										<li><a href="#">Child</a></li>
-										<li><a href="#">Child</a></li>
+										<li><a href="blog.html">Child</a></li>
+										<li><a href="blog-edu-single.html">Child</a></li>
 									</ul>
 								</li>
 								<li><a href="about.html">About</a></li>
@@ -103,7 +163,7 @@
 				<h1>welcome to Anupma Higher Secondary School</h1>
 				<h3>With our advance search feature you can now find the trips for you...</h3>
 			</div>
-			 <div id="owl-four-nav" class="owl-nav"></div>
+			<div id="owl-four-nav" class="owl-nav"></div>
 		</div>
 		<!-- <div class="banner">
 			<div class="owl-five owl-carousel owl-theme">
@@ -198,6 +258,7 @@
 		<!-- Learn courses End -->
 		<section class="whyUs-section">
 			<div class="container">
+
 				<div class="featured-points">
 					<ul>
 						<li><i class="fas fa-book"></i> free books for students</li>
@@ -208,12 +269,51 @@
 				</div>
 				<div class="whyus-wrap">
 					<h1>why us?</h1>
-					<p itemprop="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente ex animi cum natus magnam nobis fugit explicabo, accusamus at deleniti impedit. Perferendis ut at itaque impedit repellat ad magnam illum!</p>
+					<p itemprop="description">Lorem ipsum dolor sit,met consectetur adipisicing elit. Sapiente ex
+						animi cum natus magnam nobis fugit explicabo, accusamus at deleniti impedit. Perferendis ut at
+						itaque impedit repellat ad magnam illum!</p>
 
 					<a href="#" class="read-more-btn">read more</a>
 				</div>
 			</div>
 		</section>
+		<!-- NOTICE BOARD STARTS -->
+		<h1 class="text-center fs-1 text-success my-2 bg-black p-4">NEWS AND ANNOUNCEMENTS</h1>
+		<div
+			style="background-image: url(images/schoolopec.png);background-repeat: no-repeat;background-size: 100% 100%;background-attachment: fixed;">
+
+			<marquee class="text-center p-3" opacity="1" behavior="" direction="up" hspace="400" height="500px">
+				<ul>
+					<li class="fs-2 p-2"> <img src="images/star.png" width="30px" height="30px" alt=""> Lorem ipsum,
+						dolor
+						sit amet consectetur adipisicing elit. Sed labore numquam veritatis est vero dignissimos
+						assumenda possimus odio ea sapiente eos quae ab laudantium eligendi distinctio dolores qui,
+						laboriosam quasi enim facere perferendis aut officia? Modi, ex harum. Nihil, minima.</li>
+					<li class="fs-2"><img src="images/star.png" width="30px" height="30px" alt="">Lorem ipsum dolor sit
+						amet consectetur adipisicing elit. Pariatur reiciendis
+						provident praesentium vel recusandae doloribus asperiores debitis veniam quae. Nemo!</li>
+					<li class="fs-2"><img src="images/star.png" width="30px" height="30px" alt="">Lorem ipsum dolor sit,
+						amet consectetur adipisicing elit. Unde iure ut iste libero
+						obcaecati porro voluptatem consectetur, ipsum molestias odio! Nihil eveniet quisquam iure quo
+						corrupti! Qui, delectus.</li>
+					<li class="fs-2 p-2"> <img src="images/star.png" width="30px" height="30px" alt=""> Lorem ipsum,
+						dolor
+						sit amet consectetur adipisicing elit. Sed labore numquam veritatis est vero dignissimos
+						assumenda possimus odio ea sapiente eos quae ab laudantium eligendi distinctio dolores qui,
+						laboriosam quasi enim facere perferendis aut officia? Modi, ex harum. Nihil, minima.</li>
+					<li class="fs-2"><img src="images/star.png" width="30px" height="30px" alt="">Lorem ipsum dolor sit
+						amet consectetur adipisicing elit. Pariatur reiciendis
+						provident praesentium vel recusandae doloribus asperiores debitis veniam quae. Nemo!</li>
+					<li class="fs-2"><img src="images/star.png" width="30px" height="30px" alt="">Lorem ipsum dolor sit,
+						amet consectetur adipisicing elit. Unde iure ut iste libero
+						obcaecati porro voluptatem consectetur, ipsum molestias odio! Nihil eveniet quisquam iure quo
+						corrupti! Qui, delectus.</li>
+				</ul>
+			</marquee>
+		</div>
+		<!-- NOTICE BOARD ENDS -->
+
+
 		<!-- Closed WhyUs section -->
 		<section class="page-heading">
 			<div class="container">
@@ -222,66 +322,146 @@
 		</section>
 		<section class="gallery-images-section" itemprop="image" itemscope itemtype=" http://schema.org/ImageGallery">
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img1.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/WhatsApp Image 2022-03-19 at 8.53.54 PM (1).jpeg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img2.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/WhatsApp Image 2022-03-19 at 8.53.54 PM (2).jpeg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img3.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/WhatsApp Image 2022-03-19 at 8.53.54 PM.jpeg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img4.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/WhatsApp Image 2022-03-19 at 8.53.57 PM.jpeg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img5.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/WhatsApp Image 2022-03-19 at 8.53.58 PM (1).jpeg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img6.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/WhatsApp Image 2022-03-19 at 8.53.58 PM.jpeg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img7.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/WhatsApp Image 2022-03-19 at 9.07.36 PM.jpeg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img8.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img8.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/WhatsApp Image 2022-03-19 at 9.07.44 PM.jpeg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img9.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img9.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/WhatsApp Image 2022-03-19 at 9.07.45 PM.jpeg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img10.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img10.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img10.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img11.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img11.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img11.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img12.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img12.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img12.jpg" alt="gallery-images">
 				</a>
 			</div>
 		</section>
+		<!-- PRINCIPAL'S MESSAGE STARTS -->
+		<div class="container" style="max-width: 1000px;">
+			<div class="row">
+				<div class="col-md-6 shadow-lg text-center fs-4 my-4 py-5" style="background-color: #78a4eb;">
+					<p class="fs-1 fw-bold bg-primary">PRINCIPAL'S MESSAGE</p>
+					<img src="images/principal.png" height="300px" width="300px" class="rounded-circle" alt=""><br>
+					<p class="p-5">It is our endeavour to make our students Enlightened and Empowered global citizens. We owe them a
+						dignified future by giving them the right education.
+
+						The real aim of education is to draw out the capacities in a child, which are waiting to be
+						developed. We have concern for each and every student<span id="dots">...</span><span id="more">
+							We do not feel satisfied with the high achievements of only a few but we aim at the high
+							achievement of maximum students and good learning. They are taught to have the intelligence
+							to see that the real issue on hand for them as students, is to conserve their energy, study
+							well, build up physical and mental strength, fully equipped for the struggle for existence.
+
+							The interest of the students is foremost for us and the management has not made any
+							compromises with the infrastructure that needs to be provided to our students. We are
+							committed to give the best not only to ourselves but also the best of the opportunities to
+							our students.
+
+							A team of highly dedicated and competent faculty is working hard to ignite the minds of the
+							students with knowledge. Our parents have been very supportive and have indeed appreciated
+							our efforts at every stage. Each milestone we crossed, had the parents cheering us on, and
+							it is this spirit of co-operation that has hastened the growth of Ben-Hur Public School at
+							such a remarkable pace.</span></p>
+					<button onclick="myFunction()" id="myBtn">Read more</button>
+					<script>
+						function myFunction() {
+							var dots = document.getElementById("dots");
+							var moreText = document.getElementById("more");
+							var btnText = document.getElementById("myBtn");
+							if (dots.style.display === "none") {
+								dots.style.display = "inline";
+								btnText.innerHTML = "Read more";
+								moreText.style.display = "none";
+							} else {
+								dots.style.display = "none";
+								btnText.innerHTML = "Read less";
+								moreText.style.display = "inline";
+							}
+						}
+					</script>
+				</div>
+				<div class="container col-md-6 shadow-lg text-center fs-4 my-4 py-5" style="background-color:#78a4eb ;">
+					<p class="fs-1 fw-bold bg-primary">VISION AND MISSION</p>
+					<div class="d-flex" style="justify-content:center;align-items: center;">
+
+						<div>
+							<blockquote>
+								The real aim of education is to draw out the capacities in a child, which are waiting to
+								be
+								developed. We have concern for each and every student. We do not feel satisfied with the
+								high achievements of only a few but we aim at the high achievement of maximum students
+								and
+								good learning. They are taught to have the intelligence to see that the real issue on
+								hand
+								for them as students, is to conserve their energy, study well, build up physical and
+								mental
+								strength, fully equipped for the struggle for existence.
+
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- PRINCIPAL'S MESSAGE ENDS -->
 		<!-- End of gallery Images -->
 		<section class="page-heading">
 			<div class="container">
@@ -295,8 +475,12 @@
 						<img src="images/events.jpg" alt="event images">
 					</div>
 					<div class="details">
-						<a href=""><h3 itemprop="name">Orientation Programme for new Students.</h3></a>
-						<p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme for new sffs Students. Orientation Programme for new sffs Students.</p>
+						<a href="">
+							<h3 itemprop="name">Orientation Programme for new Students.</h3>
+						</a>
+						<p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme
+							for
+							new sffs Students. Orientation Programme for new sffs Students.</p>
 
 						<h5 itemprop="startDate"><i class="far fa-clock"></i> Dec 30,2018 | 11am</h5>
 						<h5 itemprop="location"><i class="fas fa-map-marker-alt"></i> Hotel Malla, Lainchaur</h5>
@@ -308,8 +492,12 @@
 						<img src="images/events.jpg" alt="event images">
 					</div>
 					<div class="details">
-						<a href=""><h3 itemprop="name">Orientation Programme for new Students.</h3></a>
-						<p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme for new sffs Students. Orientation Programme for new sffs Students.</p>
+						<a href="">
+							<h3 itemprop="name">Orientation Programme for new Students.</h3>
+						</a>
+						<p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme
+							for
+							new sffs Students. Orientation Programme for new sffs Students.</p>
 
 						<h5 itemprop="startDate"><i class="far fa-clock"></i> Dec 30,2018 | 11am</h5>
 						<h5 itemprop="location"><i class="fas fa-map-marker-alt"></i> Hotel Malla, Lainchaur</h5>
@@ -526,10 +714,13 @@
 							<img src="images/latest-new-img.jpg" alt="Latest News Images">
 						</div>
 						<div class="news-detail" itemprop="description">
-							<a href=""><h1>Orientation Programme for new Students.</h1></a>
+							<a href="">
+								<h1>Orientation Programme for new Students.</h1>
+							</a>
 							<h2 itemprop="startDate">By Admin | 20 Dec. 2018</h2>
 
-							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students.. Orientatin Programmes for new Students</p>
+							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students..
+								Orientatin Programmes for new Students</p>
 						</div>
 					</div>
 
@@ -538,10 +729,13 @@
 							<img src="images/latest-new-img.jpg" alt="Latest News Images">
 						</div>
 						<div class="news-detail" itemprop="description">
-							<a href=""><h1>Orientation Programme for new Students.</h1></a>
+							<a href="">
+								<h1>Orientation Programme for new Students.</h1>
+							</a>
 							<h2 itemprop="startDate">By Admin | 20 Dec. 2018</h2>
 
-							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students.. Orientatin Programmes for new Students</p>
+							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students..
+								Orientatin Programmes for new Students</p>
 						</div>
 					</div>
 
@@ -550,10 +744,13 @@
 							<img src="images/latest-new-img.jpg" alt="Latest News Images">
 						</div>
 						<div class="news-detail" itemprop="description">
-							<a href=""><h1>Orientation Programme for new Students.</h1></a>
+							<a href="">
+								<h1>Orientation Programme for new Students.</h1>
+							</a>
 							<h2 itemprop="startDate">By Admin | 20 Dec. 2018</h2>
 
-							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students.. Orientatin Programmes for new Students</p>
+							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students..
+								Orientatin Programmes for new Students</p>
 						</div>
 					</div>
 				</div>
@@ -562,7 +759,8 @@
 		<!-- Latest News CLosed -->
 		<section class="query-section">
 			<div class="container">
-				<p>Any Queries? Ask us a question at<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></p>
+				<p>Any Queries? Ask us a question at<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977
+						9813639131</a></p>
 			</div>
 		</section>
 		<!-- End of Query Section -->
@@ -573,10 +771,11 @@
 						<header>
 							<h1>about</h1>
 						</header>
-						<p>Edulab is a great start for and education. Personnel or oganization to start the online business with 1 click</p>
+						<p>Bharhut, Satna (M.P.) - 485001,</p>
 
 						<h4><a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></h4>
-						<h4><a href="mailto:info@educationpro.com"><i class="fas fa-envelope"></i> info@educationpro.com</a></h4>
+						<h4><a href="mailto:info@educationpro.com"><i class="fas fa-envelope"></i>
+								info@educationpro.com</a></h4>
 						<h4><a href=""><i class="fas fa-map-marker-alt"></i>Gongabu, Kathmandu, Nepal</a></h4>
 					</div>
 
@@ -594,7 +793,7 @@
 						</ul>
 					</div>
 
-					<div class="box-wrap">
+					<!-- <div class="box-wrap">
 						<header>
 							<h1>recent courses</h1>
 						</header>
@@ -612,7 +811,7 @@
 								<p><span>$50</span> $40</p>
 							</div></a>
 						</div>
-					</div>
+					</div> -->
 
 					<div class="box-wrap">
 						<header>
@@ -630,26 +829,25 @@
 			<section class="about-upper-section" itemprop="mainContentofPage">
 				<div class="container">
 					<article class="who-we-are">
-						<h2 class="top-heading">who we are</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+						<h2 class="top-heading text-light">who we are</h2>
+						<p>Anupama Higher Secondary School is an english medium school run by Anupama Education
+							Society
+							registered in 1992 under the Society Registration Act 1973, dated 27.3.92
+							Anupama Higher Secondary School took its origin on 14.11.91 in Bharhut Nagar, Satna with
+							coaching classes & kindergarden classes. Taking into consideration the earnest request
+							of
+							the parents & well wishers, the school was upgradedto primary section & later on Higher
+							Secondary with the faculty of Science,Commerce & Arts group.</p>
 					</article>
 					<div class="our-story">
 						<h2 class="top-heading">our story</h2>
 						<ul>
-							<li><i class="fas fa-chalkboard-teacher"></i> <a href="#">60+ certified teachers</a></li>
+							<li><i class="fas fa-chalkboard-teacher"></i> <a href="#">60+ certified teachers</a>
+							</li>
 							<li><i class="fas fa-graduation-cap"></i> <a href="#">600+ students enrolled</a></li>
 							<li><i class="fas fa-book-open"></i> <a href="#">50+ courses completed</a></li>
 							<li><i class="fas fa-users"></i> <a href="#">10000+ foreign followers</a></li>
-	
+
 							<!-- For None link use below -->
 							<!-- <li><i class="fas fa-chalkboard-teacher"></i> <p>60+ certified teachers</p></li>
 							<li><i class="fas fa-graduation-cap"></i>  <p>600+ students enrolled</p></li>
@@ -675,7 +873,8 @@
 			</div>
 			<div class="footer-last-section">
 				<div class="container">
-					<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+					<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a
+							href="https://labtheme.com">Lab Theme</a></p>
 				</div>
 			</div>
 		</footer>
@@ -730,4 +929,5 @@
 	<!-- <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script> -->
 	<script type="text/javascript" src="js/custom.js"></script>
 </body>
+
 </html>
